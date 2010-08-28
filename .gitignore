@@ -1,3 +1,5 @@
 .DS_Store
-log
-db/ptu.db
+log/*.log
+tmp/**/*
+config/database.yml
+db/*.db
