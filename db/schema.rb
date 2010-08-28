@@ -9,12 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100828060100) do
+ActiveRecord::Schema.define(:version => 20100828155154) do
 
 # Could not dump table "arrester" because of following StandardError
 #   Unknown type 'numeric' for column 'perform_type'
 
   create_table "bus_voltage_hvs", :force => true do |t|
+    t.integer  "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "bus_voltage_lvs", :force => true do |t|
     t.integer  "value"
     t.datetime "created_at"
     t.datetime "updated_at"
