@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100828160541) do
+ActiveRecord::Schema.define(:version => 20100828160933) do
 
 # Could not dump table "arrester" because of following StandardError
 #   Unknown type 'numeric' for column 'perform_type'
@@ -89,13 +89,8 @@ ActiveRecord::Schema.define(:version => 20100828160541) do
 # Could not dump table "hot_line_oil_filter" because of following StandardError
 #   Unknown type 'numeric' for column 'corrosion'
 
-  create_table "importance_indices", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "bus_voltage"
-    t.integer  "bus_voltage_hv_id"
-    t.integer  "bus_voltage_lv_id"
-  end
+# Could not dump table "importance_indices" because of following StandardError
+#   Unknown type 'double' for column 'system_fault_level_hv'
 
   create_table "inspection", :force => true do |t|
     t.integer "version",      :limit => nil
