@@ -947,3 +947,449 @@ Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-2
   [4;36;1mTransformer Load (191.0ms)[0m   [0;1mSELECT * FROM transformer [0m
 Rendering importance_indices/index
 Completed in 400ms (View: 58, DB: 278) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:19:28) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (9.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+Completed in 1275ms (View: 495, DB: 9) | 200 OK [http://localhost/importance_indices/new]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:19:30) [GET]
+  [4;35;1mImportanceIndex Load (255.0ms)[0m   [0mSELECT * FROM importance_indices [0m
+  [4;36;1mTransformer Load (1096.0ms)[0m   [0;1mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 2621ms (View: 297, DB: 1351) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:19:41) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv"=>"1", "system_fault_level_hv"=>"", "mva_hv"=>""}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#3658) expected, got String(#3660)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (237.0ms)
+Rendered rescues/_request_and_response (13.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:21:41) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv"=>"1", "system_fault_level_hv"=>"", "mva_hv"=>""}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#3700) expected, got String(#3660)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/somchok/.rvm/rubies/jruby-1.5.2/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:37:00) [GET]
+  [4;36;1mImportanceIndex Load (666.0ms)[0m   [0;1mSELECT * FROM importance_indices [0m
+  [4;35;1mTransformer Load (1355.0ms)[0m   [0mSELECT * FROM transformer [0m
+Rendering template within layouts/importance_indices
+Rendering importance_indices/index
+Completed in 3183ms (View: 379, DB: 2021) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:37:04) [GET]
+  [4;36;1mImportanceIndex Load (315.0ms)[0m   [0;1mSELECT * FROM importance_indices [0m
+  [4;35;1mTransformer Load (234.0ms)[0m   [0mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 1127ms (View: 225, DB: 549) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:37:10) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (4.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `merge' for :value:Symbol) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index,  :bus_voltage_id, 
+12:                         @bus_voltage_hvs, :id, :value)
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (284.0ms)
+Rendered rescues/_request_and_response (18.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:38:07) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (4.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `importance_index' for #<ImportanceIndex:0x2d523d40>) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index,  :bus_voltage_id, 
+12:                         @bus_voltage_hvs, :id)
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (185.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:39:36) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (4.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (wrong # of arguments(2 for 4)) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:bus_voltage_id, @bus_voltage_hvs)
+12:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+13:   <%= f.label 'System Fault Level: HV side' %>
+14:   <%= f.text_field :system_fault_level_hv, :size => 4 %>
+
+    app/views/importance_indices/new.html.erb:11:in `collection_select'
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (242.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:40:01) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (4.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (wrong # of arguments(2 for 4)) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:bus_voltage, @bus_voltage_hvs)
+12:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+13:   <%= f.label 'System Fault Level: HV side' %>
+14:   <%= f.text_field :system_fault_level_hv, :size => 4 %>
+
+    app/views/importance_indices/new.html.erb:11:in `collection_select'
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:40:18) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (4.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (wrong # of arguments(2 for 4)) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:bus_voltage_hv,  @bus_voltage_hvs)
+12:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+13:   <%= f.label 'System Fault Level: HV side' %>
+14:   <%= f.text_field :system_fault_level_hv, :size => 4 %>
+
+    app/views/importance_indices/new.html.erb:11:in `collection_select'
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:40:23) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (5.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (wrong # of arguments(2 for 4)) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:bus_voltage_hv,  @bus_voltage_hvs)
+12:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+13:   <%= f.label 'System Fault Level: HV side' %>
+14:   <%= f.text_field :system_fault_level_hv, :size => 4 %>
+
+    app/views/importance_indices/new.html.erb:11:in `collection_select'
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:41:37) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (3.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `merge' for :value:Symbol) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index, :bus_voltage_hv_id,  
+12:                         @bus_voltage_hvs, :id, :value)
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (129.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:41:39) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (3.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `merge' for :value:Symbol) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index, :bus_voltage_hv_id,  
+12:                         @bus_voltage_hvs, :id, :value)
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:42:03) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (4.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `merge' for :value:Symbol) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index, :bus_voltage_hv_id,  
+12:                         @bus_voltage_hvs, :id, :value, {:prompt => false})
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:42:04) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (4.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+
+ActionView::TemplateError (undefined method `merge' for :value:Symbol) on line #11 of app/views/importance_indices/new.html.erb:
+8:   <%= f.label 'Bus Voltage: HV side' %>
+9:   <%= 
+10:     @bus_voltage_hvs = BusVoltageHv.find(:all, :order => "value")
+11:     f.collection_select(:importance_index, :bus_voltage_hv_id,  
+12:                         @bus_voltage_hvs, :id, :value, {:prompt => false})
+13:   %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+14:   <%= f.label 'System Fault Level: HV side' %>
+
+    app/views/importance_indices/new.html.erb:11
+    app/views/importance_indices/new.html.erb:3
+    app/controllers/importance_indices_controller.rb:32:in `new'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:44:46) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (4.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+Completed in 447ms (View: 201, DB: 4) | 200 OK [http://localhost/importance_indices/new]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:44:47) [GET]
+  [4;35;1mImportanceIndex Load (122.0ms)[0m   [0mSELECT * FROM importance_indices [0m
+  [4;36;1mTransformer Load (302.0ms)[0m   [0;1mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 737ms (View: 162, DB: 424) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:44:54) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"2", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_hv"=>"1"}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#3968) expected, got String(#3970)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:45:10) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"3", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_hv"=>"1"}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#4008) expected, got String(#3970)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:49:29) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (3.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+Completed in 288ms (View: 81, DB: 3) | 200 OK [http://localhost/importance_indices/new]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:49:29) [GET]
+  [4;36;1mImportanceIndex Load (126.0ms)[0m   [0;1mSELECT * FROM importance_indices [0m
+  [4;35;1mTransformer Load (279.0ms)[0m   [0mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 785ms (View: 265, DB: 405) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:49:36) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"1", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_hv"=>"1"}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#4114) expected, got String(#3970)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:49:56) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"4", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_hv"=>"1"}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#4152) expected, got String(#3970)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:50:19) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;36;1mBusVoltageHv Load (5.0ms)[0m   [0;1mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+Completed in 189ms (View: 69, DB: 5) | 200 OK [http://localhost/importance_indices/new]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:50:20) [GET]
+  [4;35;1mImportanceIndex Load (113.0ms)[0m   [0mSELECT * FROM importance_indices [0m
+  [4;36;1mTransformer Load (236.0ms)[0m   [0;1mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 782ms (View: 210, DB: 349) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:50:23) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"4", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_hv"=>"1"}, "commit"=>"Create"}
+
+ActiveRecord::AssociationTypeMismatch (BusVoltageHv(#4258) expected, got String(#3970)):
+  app/controllers/importance_indices_controller.rb:46:in `new'
+  app/controllers/importance_indices_controller.rb:46:in `create'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImportanceIndicesController#new (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:51:12) [GET]
+Rendering template within layouts/importance_indices
+Rendering importance_indices/new
+  [4;35;1mBusVoltageHv Load (4.0ms)[0m   [0mSELECT * FROM bus_voltage_hvs ORDER BY value[0m
+Completed in 259ms (View: 87, DB: 4) | 200 OK [http://localhost/importance_indices/new]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:51:13) [GET]
+  [4;36;1mImportanceIndex Load (113.0ms)[0m   [0;1mSELECT * FROM importance_indices [0m
+  [4;35;1mTransformer Load (310.0ms)[0m   [0mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 846ms (View: 214, DB: 423) | 200 OK [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#create (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:51:18) [POST]
+  Parameters: {"authenticity_token"=>"wPqdnfnEVw19++Yl6gqwBpYh1ZPStEwau6AxCopsbEM=", "importance_index"=>{"bus_voltage_hv_id"=>"4", "system_fault_level_hv"=>"", "mva_hv"=>"", "bus_voltage_lv"=>"1"}, "commit"=>"Create"}
+  [4;36;1mImportanceIndex Create (7.0ms)[0m   [0;1mINSERT INTO importance_indices (created_at, updated_at, bus_voltage, bus_voltage_hv_id) VALUES('2010-08-28 06:51:18', '2010-08-28 06:51:18', NULL, 4)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT SEQ FROM SQLITE_SEQUENCE WHERE NAME = 'importance_indices'[0m
+Redirected to http://localhost:3000/importance_indices/2
+Completed in 207ms (DB: 9) | 302 Found [http://localhost/importance_indices]
+
+
+Processing ImportanceIndicesController#show (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:51:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mImportanceIndex Load (2.0ms)[0m   [0;1mSELECT * FROM importance_indices WHERE (importance_indices.id = 2) [0m
+Rendering template within layouts/importance_indices
+Rendering importance_indices/show
+Completed in 201ms (View: 13, DB: 2) | 200 OK [http://localhost/importance_indices/2]
+
+
+Processing ImportanceIndicesController#index (for 0:0:0:0:0:0:0:1%0 at 2010-08-28 13:51:19) [GET]
+  [4;35;1mImportanceIndex Load (125.0ms)[0m   [0mSELECT * FROM importance_indices [0m
+  [4;36;1mTransformer Load (300.0ms)[0m   [0;1mSELECT * FROM transformer [0m
+Rendering importance_indices/index
+Completed in 671ms (View: 128, DB: 425) | 200 OK [http://localhost/importance_indices]
