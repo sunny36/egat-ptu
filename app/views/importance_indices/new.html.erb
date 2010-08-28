@@ -1,0 +1,32 @@
+<h1>New importance_index</h1>
+
+<% form_for(@importance_index) do |f| %>
+  <%= f.error_messages %>
+  <%= f.label 'Transformer Name' %>
+  <input id="example" />
+  <br/><br/>
+  <%= f.label 'Bus Voltage: HV side' %>
+  <%= 
+    f.select(:bus_voltage_hv, [['69', 1], ['115', 2], ['230', 3], ['500', 4]])
+  %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+  <%= f.label 'System Fault Level: HV side' %>
+  <%= f.text_field :system_fault_level_hv, :size => 4 %>
+  &nbsp;<strong>[kA]</strong>&nbsp;&nbsp;&nbsp;
+  <%= f.text_field :mva_hv, :size => 10 %><strong>[MVA]</strong>
+  <br/><br/>
+  <%= f.label 'Bus Voltage: LV side' %>
+  <%= 
+    f.select(:bus_voltage_hv, 
+             [['22', 1], ['33', 2], ['69', 3], ['115', 4], ['230', 5]])
+  %>&nbsp;<strong>[kV]</strong>&nbsp;&nbsp;&nbsp;
+  <%= f.label 'System Fault Level: LV side' %>
+  <%= f.text_field :system_fault_level_hv, :size => 4 %>
+  &nbsp;<strong>[kA]</strong>&nbsp;&nbsp;&nbsp;
+  <%= f.text_field :mva_hv, :size => 10 %><strong>[MVA]</strong>
+  
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', importance_indices_path %>

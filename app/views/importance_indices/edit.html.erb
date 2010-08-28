@@ -1,0 +1,12 @@
+<h1>Editing importance_index</h1>
+
+<% form_for(@importance_index) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @importance_index %> |
+<%= link_to 'Back', importance_indices_path %>
