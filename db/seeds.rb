@@ -5,3 +5,7 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
+bus_voltage_hvs = BusVoltageHv.create([{:value => 69}, 
+                                       {:value => 115}, 
+                                       {:value => 230}, 
+                                       {:value => 500}])
